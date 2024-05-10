@@ -10,7 +10,11 @@ function App() {
           </nav>
         </aside>
 
-        <section className='flex-1 bg-slate-200 text-black'>WORKSPACE</section>
+        <section className='flex-1 bg-slate-200 text-black'>
+          <nav className='h-14 border-b bg-[#191B23] text-white border-[#2C323B]'>
+            WORKSPACE Nab
+          </nav>
+        </section>
       </main>
     </div>
   );
