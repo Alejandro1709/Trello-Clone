@@ -1,7 +1,9 @@
 function App() {
   return (
     <div className='flex flex-col text-white min-h-screen'>
+      {/* MAIN NAV STARTS */}
       <nav className='h-12 bg-[#1D2126] border-b border-[#2C323B]'>NAV</nav>
+      {/* MAIN NAV ENDS */}
 
       <main className='flex flex-row flex-1'>
         {/* SIDEBAR STARTS */}
