@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Workspace from './components/Workspace';
 
 function App() {
   return (
@@ -13,11 +14,7 @@ function App() {
         {/* SIDEBAR ENDS */}
 
         {/* WORKSPACE SECTION STARTS */}
-        <section className='relative flex-1 bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 text-black'>
-          <nav className='flex items-center px-4 absolute top-0 w-full h-14 bg-[#191B23]/80 text-white'>
-            <h2 className='font-semibold text-md'>WORKSPACE Nab</h2>
-          </nav>
-        </section>
+        <Workspace />
         {/* WORKSPACE SECTION ENDS */}
       </main>
     </div>
