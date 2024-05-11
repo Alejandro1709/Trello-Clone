@@ -4,7 +4,7 @@ import Boards from './Boards';
 const BoardSection = () => {
   const boards = useBoardStore((state) => state.boards);
 
-  const handleCreateBoard = () => {};
+  //const handleCreateBoard = () => {};
 
   return (
     <div className='flex flex-col'>
