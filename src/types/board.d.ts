@@ -5,7 +5,8 @@ export interface IList {
 }
 
 export default interface IBoard {
-  id: string;
+  id: number;
   title: string;
+  slug: string;
   lists: IList[];
 }

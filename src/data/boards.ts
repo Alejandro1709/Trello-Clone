@@ -2,8 +2,9 @@ import type IBoard from '../types/board';
 
 const boards: IBoard[] = [
   {
-    id: 'b01',
+    id: 1,
     title: 'Da Mario Board',
+    slug: 'da-mario-board',
     lists: [
       {
         id: 'l01',
@@ -23,8 +24,9 @@ const boards: IBoard[] = [
     ],
   },
   {
-    id: 'b02',
+    id: 2,
     title: 'Test Board',
+    slug: 'test-board',
     lists: [
       {
         id: 'l02',

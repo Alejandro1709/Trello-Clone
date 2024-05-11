@@ -7,7 +7,7 @@ type ListItemProps = {
 
 const ListItem = ({ list }: ListItemProps) => {
   return (
-    <li className='w-64 p-2 bg-[#0F1203] rounded-md'>
+    <li className='w-64 p-2 bg-[#0F1203] rounded-md h-fit'>
       <header className='flex flex-row justify-between'>
         <h2>{list.title}</h2>
         <MoreHorizontal />

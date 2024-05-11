@@ -17,7 +17,7 @@ const Boards = ({ boards }: BoardProps) => {
       {boards.map((board) => (
         <li
           className='flex flex-row gap-2 p-2 bg-[#5D5F65] items-center cursor-pointer hover:bg-[#434549]'
-          key={board.id}
+          key={board.slug}
           onClick={() => handleClick(board)}
         >
           {/* Board Image */}
