@@ -11,7 +11,7 @@ type BoardType = {
 
 export const useBoardStore = create<BoardType>((set) => ({
   boards: boards,
-  selectedBoard: boards[0],
+  selectedBoard: boards[0] ?? undefined,
   setBoards: (boards: IBoard[]) => set(() => ({ boards })),
   setSelectedBoard: (board: IBoard) => set(() => ({ selectedBoard: board })),
 }));

@@ -22,6 +22,27 @@ const boards: IBoard[] = [
       },
     ],
   },
+  {
+    id: 'b02',
+    title: 'Test Board',
+    lists: [
+      {
+        id: 'l02',
+        title: 'To Do',
+        items: [],
+      },
+      {
+        id: 'l03',
+        title: 'In Progress',
+        items: [],
+      },
+      {
+        id: 'l04',
+        title: 'Done',
+        items: [],
+      },
+    ],
+  },
 ];
 
 export default boards;

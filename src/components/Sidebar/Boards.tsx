@@ -13,7 +13,7 @@ const Boards = ({ boards }: BoardProps) => {
   };
 
   return (
-    <ul className='flex flex-col gap-0.5'>
+    <ul className='flex flex-col gap-0.5 border-b border-[#2C323B]'>
       {boards.map((board) => (
         <li
           className='flex flex-row gap-2 p-2 bg-[#5D5F65] items-center cursor-pointer hover:bg-[#434549]'
