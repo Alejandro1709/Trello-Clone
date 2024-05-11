@@ -2,7 +2,7 @@ import { useBoardStore } from '../../stores/boardStore';
 import Boards from './Boards';
 
 type BoardSectionProps = {
-  onCreateBoard: React.Dispatch<React.SetStateAction<boolean>>;
+  onCreateBoard: (isOpen: boolean) => void;
 };
 
 const BoardSection = ({ onCreateBoard }: BoardSectionProps) => {

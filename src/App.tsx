@@ -3,10 +3,12 @@ import Sidebar from './components/Sidebar';
 import Workspace from './components/Workspace';
 import Backdrop from './components/Backdrop';
 import BoardForm from './components/Backdrop/BoardForm';
-import { useState } from 'react';
+import { useModalStore } from './stores/modalStore';
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const isModalOpen = useModalStore((state) => state.isModalOpen);
+  const setIsModalOpen = useModalStore((state) => state.setModalOpen);
+
   return (
     <div className='flex flex-col text-white min-h-screen'>
       {isModalOpen ? (

@@ -1,7 +1,7 @@
 import BoardSection from './BoardSection';
 
 type SidebarProps = {
-  onCreateBoard: React.Dispatch<React.SetStateAction<boolean>>;
+  onCreateBoard: (isOpen: boolean) => void;
 };
 
 const Sidebar = ({ onCreateBoard }: SidebarProps) => {
