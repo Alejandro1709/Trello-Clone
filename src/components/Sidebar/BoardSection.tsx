@@ -1,7 +1,11 @@
 import { useBoardStore } from '../../stores/boardStore';
 import Boards from './Boards';
 
-const BoardSection = () => {
+type BoardSectionProps = {
+  onCreateBoard: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const BoardSection = ({ onCreateBoard }: BoardSectionProps) => {
   const boards = useBoardStore((state) => state.boards);
 
   //const handleCreateBoard = () => {};
@@ -12,7 +16,12 @@ const BoardSection = () => {
       {/* BOARDS STARTS */}
       <Boards boards={boards} />
       {/* BOARDS ENDS */}
-      <button className='bg-[#1D2126] mt-1.5 p-2'>Add Board</button>
+      <button
+        className='bg-[#1D2126] mt-1.5 p-2'
+        onClick={() => onCreateBoard(true)}
+      >
+        Add Board
+      </button>
     </div>
   );
 };
