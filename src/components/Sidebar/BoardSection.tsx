@@ -1,10 +1,12 @@
 import { useBoardStore } from '../../stores/boardStore';
 import Boards from './Boards';
 
-const BoardSection = () => {
-  const boards = useBoardStore((state) => state.boards);
+type BoardSectionProps = {
+  onCreateBoard: (isOpen: boolean) => void;
+};
 
-  //const handleCreateBoard = () => {};
+const BoardSection = ({ onCreateBoard }: BoardSectionProps) => {
+  const boards = useBoardStore((state) => state.boards);
 
   return (
     <div className='flex flex-col'>
@@ -12,7 +14,12 @@ const BoardSection = () => {
       {/* BOARDS STARTS */}
       <Boards boards={boards} />
       {/* BOARDS ENDS */}
-      <button className='bg-[#1D2126] mt-1.5 p-2'>Add Board</button>
+      <button
+        className='bg-[#1D2126] mt-1.5 p-2'
+        onClick={() => onCreateBoard(true)}
+      >
+        Add Board
+      </button>
     </div>
   );
 };

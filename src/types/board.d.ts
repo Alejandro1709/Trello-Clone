@@ -1,5 +1,5 @@
 export interface IList {
-  id: string;
+  id: number;
   title: string;
   items: string[];
 }
@@ -8,5 +8,5 @@ export default interface IBoard {
   id: number;
   title: string;
   slug: string;
-  lists: IList[];
+  lists?: IList[];
 }

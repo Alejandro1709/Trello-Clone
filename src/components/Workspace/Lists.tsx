@@ -6,7 +6,7 @@ const Lists = () => {
 
   return (
     <ul className='flex flex-row gap-4 text-white'>
-      {selectedBoard?.lists.map((list) => (
+      {selectedBoard?.lists?.map((list) => (
         <ListItem key={list.id} list={list} />
       ))}
     </ul>

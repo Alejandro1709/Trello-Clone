@@ -1,6 +1,10 @@
 import BoardSection from './BoardSection';
 
-const Sidebar = () => {
+type SidebarProps = {
+  onCreateBoard: (isOpen: boolean) => void;
+};
+
+const Sidebar = ({ onCreateBoard }: SidebarProps) => {
   return (
     <aside className='bg-[#191B23] w-60 border-r border-[#2C323B]'>
       <nav className='flex justify-center items-center h-14 border-b bg-[#191B23] border-[#2C323B]'>
@@ -8,7 +12,7 @@ const Sidebar = () => {
       </nav>
 
       {/* BOARDS SECTION STARTS */}
-      <BoardSection />
+      <BoardSection onCreateBoard={onCreateBoard} />
       {/* BOARDS SECTION ENDS */}
     </aside>
   );
