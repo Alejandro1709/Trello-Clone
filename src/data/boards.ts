@@ -7,17 +7,17 @@ const boards: IBoard[] = [
     slug: 'ales-board',
     lists: [
       {
-        id: 'l01',
+        id: 1,
         title: 'To Do',
         items: ['Create Basic Database', 'Seed Database'],
       },
       {
-        id: 'l02',
+        id: 2,
         title: 'In Progress',
         items: ['Create Basic Server'],
       },
       {
-        id: 'l03',
+        id: 3,
         title: 'Done',
         items: ['Create Project'],
       },
@@ -29,17 +29,17 @@ const boards: IBoard[] = [
     slug: 'test-board',
     lists: [
       {
-        id: 'l02',
+        id: 4,
         title: 'To Do',
         items: [],
       },
       {
-        id: 'l03',
+        id: 5,
         title: 'In Progress',
         items: [],
       },
       {
-        id: 'l04',
+        id: 6,
         title: 'Done',
         items: [],
       },
