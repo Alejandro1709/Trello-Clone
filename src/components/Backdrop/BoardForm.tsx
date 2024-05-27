@@ -15,6 +15,7 @@ const BoardForm = () => {
 
   const handleCreateBoard = () => {
     const newBoard = {
+      id: boards.length + 1,
       title: input,
       slug: slugify(input.toLowerCase()),
       lists: [],
